@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4C2C1;
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #C08A90;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+ul{
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* font-size: 2rem; */
+    padding-left: 0px;
+    margin-top: 0;
+}
+
+.student{
+    flex: 1;
+    padding: 10px;
+    text-align: center; 
+    background-color: #B7787F;
+    border-color: #B7787F;
+    border-radius: 10px 0px 10px 0px;
+    font-size: 1.2rem;
+    /* box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2); */
+}
+
+.admin{
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #B7787F;
+    border-color: #B7787F;
+    border-radius: 0px 10px 0px 10px;
+    font-size: 1.2rem;
+    /* box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2); */
+}
+
+input{
+    margin: 0px 40px 0px 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: #C08A90;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder{
+    color: white;
+}
+
+.login{
+    margin: 10px 200px -20px 200px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #9B6867;
+    border: 1px solid #9B6867;
+}
+
+.google-acc{
+    align-self: center;
+    padding: 5px 15px 6px 15px;
+    margin-top: -20px;
+    text-align: center;
+    display: inline;
+    background-color: #9B6867;
+    border: 1px solid #9B6867;
+    border-radius: 15px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.go-to-login{
+    align-self: center;
+    font-size: 0.7rem;
+    padding-top: -20;
+    font-weight: bold;
+}
+
+.forgot-pass{
+    text-align: center; 
+    margin-top: -10px; 
+    margin-bottom: 0;
+    color: rgb(45, 44, 44);
+}
