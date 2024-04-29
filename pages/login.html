@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="/Styling/login.css">
 </head>
 <body>
-    <form>
+    <form id="login">
         <div class="login-box" style="height: 320px; width: 500px;">
             <ul>
-                <button class="student"><li>Student</li></button>
-                <button class="admin"><li>Admin</li></button>
+                <button class="student loginOption"><li>Student</li></button>
+                <button class="admin loginOption"><li>Admin</li></button>
             </ul>
-            <input class='item' type="email" placeholder="Enter your email">
-            <input class='item' type="password" placeholder="Enter your password" required>
+            <input class='item' id="email" type="email" placeholder="Enter your email">
+            <input class='item' id="password" type="password" placeholder="Enter your password">
             <a style="text-align: right; margin-right: 40px;" href="./forgot_pass.html" class="forgot-password">Forgot Password?</a>
             <button class="login" type="submit">Log In</button>
             <p style="text-align: center;">or</p>
@@ -23,5 +23,6 @@
             </a>            
         </div>
     </form>
+    <script src="/JavaScript/login.js" charset="UTF-8"></script>
 </body>
 </html>
