@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--this is telling the page to find the device where the page is going to be viewed or open for this it uses the device width and the scaling -->
     <title>Document</title>
-    <link rel="stylesheet" href="/Styling/login.css">
+    <link rel="stylesheet" href="../Styling/login.css">
 </head>
 <body>
     <form id="login">
@@ -13,8 +13,8 @@
                 <button class="student loginOption"><li>Student</li></button>
                 <button class="admin loginOption"><li>Admin</li></button>
             </ul>
-            <input class='item' id="email" type="email" placeholder="Enter your email">
-            <input class='item' id="password" type="password" placeholder="Enter your password">
+            <input class='item' name="email" id="email" type="email" placeholder="Enter your email">
+            <input class='item' name="password" id="password" type="password" placeholder="Enter your password">
             <a style="text-align: right; margin-right: 40px;" href="./forgot_pass.html" class="forgot-password">Forgot Password?</a>
             <button class="login" type="submit">Log In</button>
             <p style="text-align: center;">or</p>
@@ -23,6 +23,6 @@
             </a>            
         </div>
     </form>
-    <script src="/JavaScript/login.js" charset="UTF-8"></script>
+    <script src="../JavaScript/login.js" charset="UTF-8"></script>
 </body>
 </html>
