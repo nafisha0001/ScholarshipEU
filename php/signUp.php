@@ -1,10 +1,9 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+session_start();
 
 $con = mysqli_connect("localhost", "root", "", "scholarship");
-if (!$con) {
+if (mysqli_connect_error()) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
@@ -20,9 +19,10 @@ if(!preg_match("/[0-9]/", $_POST["password"])){
     die("Password must contain at least one number");
 }
 
+$password= password_hash($_POST["password"] , PASSWORD_DEFAULT);
+
 $name = $_POST["name"];
 $email = $_POST["email"];
-$password = $_POST["password"];
 
 // Check if user already has an account with this email
 $check_sql = "SELECT * FROM student WHERE email = ?";
@@ -39,23 +39,23 @@ if(mysqli_num_rows($result) > 0){
     die("You already have an account with this email address");
 }
 
-// Insert new user if not already registered
-$sql = "INSERT INTO student (fname, email, password) VALUES (?, ?, ?)";
+$sql= "INSERT INTO student (fname, email, password) VALUES (?, ?, ?)";
+
 $stmt = mysqli_stmt_init($con);
 if (!mysqli_stmt_prepare($stmt, $sql)) {
-    die("Error preparing statement: " . mysqli_error($con));
+    die(mysqli_error($con));
 }
 
 mysqli_stmt_bind_param($stmt, "sss", $name, $email, $password);
 
 if(mysqli_stmt_execute($stmt)){
-    echo "Account created successfully";
+    echo '<script>window.location.href = "../pages/home.html";</script>';
+    exit;
 }else{
     echo "Error creating account: " . mysqli_error($con);
 }
 
 mysqli_stmt_close($stmt);
 mysqli_close($con);
-
 
 ?>

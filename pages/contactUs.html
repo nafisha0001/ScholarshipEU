@@ -9,7 +9,7 @@
 <body>
     <p>Need Help!</p>
     <h2>Have any Query?</h2>
-    <form type="submit">
+    <form type="submit" action="../php/query.php" method="post">
         <div id="firstRow">
             <div>
                 <label for="name">Name:</label><br>
@@ -21,12 +21,12 @@
             </div>
             <div>
                 <label for="contact">Contact Number:</label><br>
-                <input type="contact number" name="number" required placeholder="Enter your Contat Number">
+                <input type="contact number" name="contactNumber" required placeholder="Enter your Contat Number">
             </div>
         </div>
         <div>
             <label for="Your Query"><br>Your Query:</label><br>
-            <textarea  id="query" name="your query" placeholder="Enter Message..."></textarea><br>
+            <textarea  id="query" name="Query" placeholder="Enter Message..."></textarea><br>
         </div>
         <input type="submit" value="Send Message" style="float: right;">
     </form>
