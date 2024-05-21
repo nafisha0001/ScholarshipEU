@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../Styling/login.css">
 </head>
 <body>
-    <form id="login" method="post" action="../php/login.php">
+    <form id="login" action="../php/log.php" method="post">
         <div class="login-box" style="height: 280px; width: 500px; padding-top: 50px;">
             <!-- <ul>
                 <button class="student loginOption"><li>Student</li></button>
@@ -17,7 +17,8 @@
             <input class='item' name="email" id="email" type="email" placeholder="Enter your email">
             <input class='item' name="password" id="password" type="password" placeholder="Enter your password">
             <a style="text-align: right; margin-right: 40px;" href="./forgot_pass.html" class="forgot-password">Forgot Password?</a>
-            <button class="login" name="submit" type="submit">Log In</button>
+            <input class="login" type="submit"></input>
+            <!-- <input type="submit" value="Send Message" style="float: right;"> -->
             <p style="text-align: center;">or</p>
             <a class="google-acc" style="color: white; text-decoration: none;" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=offline&client_id=947318989803-rvmefmc9rok273go8589cmo21dkvjb2q.apps.googleusercontent.com&enable_granular_consent=true&login_hint=Nafishakhan0001%40gmail.com&prompt=consent&redirect_uri=https%3A%2F%2Fcolab.research.google.com%2Ftun%2Fm%2Fauthorize-for-drive-credentials-ephem&response_type=none%20gsession&scope=email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdocs.test%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.activity.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.photos.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fexperimentsandconfigs%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fpeopleapi.readonly&state=%7B%22token%22%3A%22pLJ4t7GFYCUqvErpPxUv863Z8wc%3A1710388551239%22%2C%22endpoint%22%3A%22m-s-26nbml84f8luq%22%2C%22scopes%22%3A%5B%22email%22%2C%22https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdocs.test%22%2C%22https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive%22%2C%22https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.activity.readonly%22%2C%22https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.photos.readonly%22%2C%22https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fexperimentsandconfigs%22%2C%22https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fpeopleapi.readonly%22%5D%7D&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow" target="_blank" class="google-acc">
                 Log in with Google 

@@ -7,6 +7,7 @@ if (mysqli_connect_error()) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+print_r($_POST);
 $name = $_POST["name"];
 $email = $_POST["email"];
 $contactNumber = $_POST["contactNumber"];
@@ -25,6 +26,6 @@ mysqli_stmt_execute($stmt);
 mysqli_stmt_close($stmt);
 mysqli_close($con);
 echo '<script>alert("We will reach you soon");</script>';
-echo '<script>window.location.href = "../pages/contactUs.html";</script>';
+// echo '<script>window.location.href = "../pages/contactUs.html";</script>';
 
 ?>
